@@ -1,0 +1,105 @@
+En caso de no tener una carpeta crearla con el siguiente comando:
+- mkdir ejercicio
+- cd ejercicio
+
+1. Crear un repositorio nuevo con el nombre practica-git.
+- git init
+
+2. Comprobar el estado del repositorio
+- git status
+
+3. Crear un archivo prueba.txt con al menos 5 renglones de contenido
+- echo -e "Renglon 1\nRenglon 2\nRenglon 3\nRenglon 4\nRenglon 5" > prueba.txt
+
+
+4. Añadir el archivo al repositorio
+- git add prueba.txt
+
+5. Comprobar nuevamente el status
+- git status
+
+6. Realizar commit de los últimos cambios con el mensaje “Se añadió el archivo de prueba”
+- git commit -m "Se añadió el archivo de prueba"
+ 
+
+7. Modificar el contenido del archivo prueba.txt (agregar al menos 3 renglones más)
+- echo -e "Renglon 6\nRenglon 7\nRenglon 8" >> prueba.txt
+
+8. Hacer commit de los cambios con el mensaje “Se modificó el archivo de prueba”
+- git add prueba.txt
+- git commit -m "Se modificó el archivo de prueba"
+
+
+9. Mostrar el historial de cambios del repositorio
+- git log
+
+10. Crear una carpeta llamada mensajes y dentro de ella un archivo llamado mensaje1.txt con al menos 5 renglones de contenido
+- mkdir mensajes
+- echo -e "Mensaje 1\nMensaje 2\nMensaje 3\nMensaje 4\nMensaje 5" > mensajes/mensaje1.txt
+
+
+11. Añadir los cambios al repositorio
+- git add mensajes/mensaje1.txt
+
+12. Hacer un commit de los cambios con el mensaje “Se añadió el primer archivo de
+mensajes en la carpeta correspondiente”
+- git commit -m "Se añadió el primer archivo de mensajes en la carpeta correspondiente"
+
+
+13. Comprobar status
+- git status
+
+
+14. Mostrar historial de cambios
+- git log
+
+
+15. Crear el archivo mensaje2.txt en la carpeta de mensajes con al menos 3 renglones de
+contenido
+- echo -e "Mensaje 6\nMensaje 7\nMensaje 8" > mensajes/mensaje2.txt
+
+
+16. Añadir cambios
+- git add mensajes/mensaje2.txt
+
+
+17. Hacer commit con el mensaje “Se añadió el segundo archivo de mensajes”
+- git commit -m "Se añadió el segundo archivo de mensajes"
+
+
+18. Comprobar status
+- git status
+
+
+19. Crea una nueva rama llamada créditos
+- git branch créditos
+
+
+20. Cambia a la rama créditos
+- git checkout créditos
+
+
+21. Crea el archivo créditos.txt y añade los datos del desarrollador (tus datos)
+- echo -e "Nombre: Diego\nEmail: diegosv.ti21@utsjr.edu.mx\nGitHub: Salinas03\nProyecto: practica-git" > créditos.txt
+
+
+22. Añade los cambios
+- git add créditos.txt
+
+
+23. Hacer un commit con el mensaje “Se añadieron créditos”
+- git commit -m "Se añadieron créditos"
+
+
+24. Fusiona la rama créditos con la rama master
+- git checkout master
+- git merge créditos
+
+
+25. Crea un repositorio público en GitHub llamado practica-git
+- Para esta parte se debe de crear un repositorio en GitHub web llamándolo practica-git
+- Una vez que tengamos el repositorio buscamos la url en html para poder clonarlo y hacerlo publico
+
+26. Añade los cambios del repositorio local al remoto
+- git remote add origin https://github.com/Salinas03/practica-git.git
+- git push -u origin master
